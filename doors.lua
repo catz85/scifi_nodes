@@ -101,7 +101,7 @@ function rightclick(pos, node, player, itemstack, pointed_thing)
 	minetest.sound_play(sound,{
 		max_hear_distance = 16,
 		pos = pos,
-		gain = 1.0
+		gain = 0.7
 	})
 
 	local timer = minetest.get_node_timer(pos)
@@ -142,7 +142,7 @@ function ontimer(pos, elapsed)
 	minetest.sound_play(sound,{
 		max_hear_distance = 16,
 		pos = pos,
-		gain = 1.0
+		gain = 0.7
 	})
 
 	local node = minetest.get_node(pos)
